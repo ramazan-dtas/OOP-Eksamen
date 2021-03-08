@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_1
 {
-    struct Bil
+    class Bil
     {
         private string Mærke { get; set; }
         public int? Alder { get; set; }

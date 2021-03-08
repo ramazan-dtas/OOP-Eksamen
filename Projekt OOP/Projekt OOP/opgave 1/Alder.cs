@@ -18,7 +18,7 @@ namespace Projekt_OOP.opgave_1
             værdi = Udregning(Årstal);
         }
 
-        public int Udregning(DateTime Årstal)
+        private int Udregning(DateTime Årstal)
         {
             return DateTime.Now.Year - Årstal.Year;
         }
