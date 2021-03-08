@@ -7,6 +7,11 @@ namespace Projekt_OOP.opgave_2
 {
     abstract class motorkørtøj
     {
-        
+        public string model { get; set; }
+
+        public motorkørtøj(string Model)
+        {
+            model = Model;
+        }
     }
 }

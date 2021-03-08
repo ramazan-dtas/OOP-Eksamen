@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_2
 {
-    class audi : motorkørtøj
+    class audi
     {/*
         private string fælger { get; set; }
         private int hk { get; set; }

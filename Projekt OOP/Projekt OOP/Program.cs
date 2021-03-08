@@ -9,12 +9,12 @@ namespace Projekt_OOP
     {
         static void Main(string[] args)
         {
-            Bil p1 = new Bil("audi",new DateTime(2010,12,24));
+            Bil p1 = new Bil("audi",new DateTime(2010, 12, 24));
             Console.WriteLine(p1);
 
             var Nybil = p1;
-            p1.Alder = 30;
-            Console.WriteLine($"Bilens nye alder {Nybil} år");            
+            Nybil.Alder = 30;
+            Console.WriteLine(Nybil.Alder);
         }
     }
 }
