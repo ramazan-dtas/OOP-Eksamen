@@ -6,7 +6,7 @@ namespace Projekt_OOP.opgave_1
 {
     class Bil
     {
-        private string Mærke { get; set; }
+        public string Mærke { get; set; }
         public int? Alder { get; set; }
 
         public Bil(string mærke, DateTime Årstal)

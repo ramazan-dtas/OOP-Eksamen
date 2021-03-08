@@ -11,7 +11,6 @@ namespace Projekt_OOP.opgave_1
     {
         public int? værdi { get; set; }
         
-
         public Alder(DateTime Årstal)
         {
             værdi = null;

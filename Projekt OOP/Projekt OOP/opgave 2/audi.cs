@@ -4,26 +4,24 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Projekt_OOP.opgave_2
-{
+{//Child klasse
     class audi : Bil
     {
-        public string nrPlade { get; set; }
+        private string diffPlade { get; set; }
+        private string nrPlade { get; set; }
         private DateTime registreretDato { get; set; }
-        public audi(string NrPlade, DateTime RegistreretDato) : base(NrPlade, RegistreretDato) { }
-        /*
-        private string fælger { get; set; }
-        private int hk { get; set; }
-        private string model { get; set; }
-        public audi(int Hk, string Model, string Fælger) : base(Hk, Model) 
+
+        public audi(string NrPlade, DateTime RegistreretDato, string DiffPlade) : base(NrPlade, RegistreretDato) 
         {
-            fælger = Fælger;
-            hk = Hk;
-            model = Model;
+            diffPlade = DiffPlade;
+            nrPlade = NrPlade;
+            registreretDato = RegistreretDato;
         }
-        
+
         public override string ToString()
         {
-            return $"Det er en {model} med {hk} hestekræfter den har {fælger} alufælge";
-        }*/
+            return $"Dato for registreret nummer plade: {registreretDato.Date}" +
+                $"\nplade nummer: {nrPlade}\nhvilke slags: {diffPlade}";
+        }
     }
 }
