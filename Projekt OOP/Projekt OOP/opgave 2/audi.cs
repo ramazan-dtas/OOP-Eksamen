@@ -5,8 +5,12 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_2
 {
-    class audi
-    {/*
+    class audi : Bil
+    {
+        public string nrPlade { get; set; }
+        private DateTime registreretDato { get; set; }
+        public audi(string NrPlade, DateTime RegistreretDato) : base(NrPlade, RegistreretDato) { }
+        /*
         private string fælger { get; set; }
         private int hk { get; set; }
         private string model { get; set; }
