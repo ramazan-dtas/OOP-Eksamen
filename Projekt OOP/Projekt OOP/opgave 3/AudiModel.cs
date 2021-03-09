@@ -10,13 +10,6 @@ namespace Projekt_OOP.opgave_3
         public DateTime Årgang { get; set; }
         public string Model { get; set; }
         public string farve { get; set; }
-        public enum Farve
-        {
-            sort,
-            gul,
-            rød,
-            blå
-        }
 
     }
 }
