@@ -24,20 +24,19 @@ namespace Projekt_OOP
             Console.WriteLine(a1);
 
             Console.WriteLine("-------------------------OPGAVE 3-------------------------");
-            
-            
-            
+
+            string[] names = Enum.GetNames(typeof(MyEnum));
             try
             {
                 var liste = new List<AudiModel>()
                 {
-                    new AudiModel(){Model = "a7", Årgang = new DateTime(2012, 5, 20), MotorStørrelse = 1.2, Farve = "sort"},
-                    new AudiModel(){Model = "a5", Årgang = new DateTime(2010, 3, 12), MotorStørrelse = 2.0, Farve= "blå"},
-                    new AudiModel(){Model = "a4", Årgang = new DateTime(2005, 12, 31), MotorStørrelse = 1.4, Farve= "gul"},
-                    new AudiModel(){Model = "quattro", Årgang = new DateTime(2017, 9, 15), MotorStørrelse = 3.0, Farve= "sort"},
-                    new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, Farve = "rød"}
+                    new AudiModel(){Model = "a7", Årgang = new DateTime(2012, 5, 20), MotorStørrelse = 1.2, farve = names[0].ToString()/*Farve = sort*/},
+                    new AudiModel(){Model = "a5", Årgang = new DateTime(2010, 3, 12), MotorStørrelse = 2.0, farve = names[1].ToString()/*Farve= "blå"*/},
+                    new AudiModel(){Model = "a4", Årgang = new DateTime(2005, 12, 31), MotorStørrelse = 1.4, farve = names[2].ToString()/*Farve= "gul"*/},
+                    new AudiModel(){Model = "quattro", Årgang = new DateTime(2017, 9, 15), MotorStørrelse = 3.0, farve = names[0].ToString()/*Farve= "sort"*/},
+                    new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, farve = names[3].ToString()/*Farve = "rød"*/}
                 };
-                var Farve = liste.Where(x => x.Farve.Contains("sort")).ToList();
+                var Farve = liste.Where(x => x.farve.Contains("sort")).ToList();
                 Console.WriteLine(liste.ToList());
             }
             
