@@ -9,6 +9,7 @@ namespace Projekt_OOP.opgave_2
     {
         private string diffPlade { get; set; }
         private string nrPlade { get; set; }
+        private string tekst { get; set; }
         private DateTime registreretDato { get; set; }
 
         public audi(string NrPlade, DateTime RegistreretDato, string DiffPlade) : base(NrPlade, RegistreretDato) 
@@ -22,6 +23,12 @@ namespace Projekt_OOP.opgave_2
         {
             return $"Dato for registreret nummer plade: {registreretDato.Date}" +
                 $"\nplade nummer: {nrPlade}\nhvilke slags: {diffPlade}";
+        }
+
+        public string ToStringTekst(string Tekst)
+        {
+            tekst = Tekst;
+            return tekst;
         }
     }
 }

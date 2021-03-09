@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_2
 {//base class
-    abstract class motorkørtøj : Bil
+    abstract class motorkørtøj 
     {
         public string model { get; set; }
 
-        public motorkørtøj(string Model, DateTime SynDato) :base(Model, SynDato) 
+        public motorkørtøj(string Model, DateTime SynDato)
         {
             model = Model;
         }
