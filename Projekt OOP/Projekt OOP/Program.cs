@@ -32,10 +32,10 @@ namespace Projekt_OOP
                 var liste = new List<AudiModel>()
                 {
                     new AudiModel(){Model = "a7", Årgang = new DateTime(2012, 5, 20), MotorStørrelse = 1.2, Farve = "sort"},
-                    new AudiModel(){Model = "a5", Årgang = new DateTime(2010, 3, 12), MotorStørrelse = 2.0, Farve= "rød"},
+                    new AudiModel(){Model = "a5", Årgang = new DateTime(2010, 3, 12), MotorStørrelse = 2.0, Farve= "blå"},
                     new AudiModel(){Model = "a4", Årgang = new DateTime(2005, 12, 31), MotorStørrelse = 1.4, Farve= "gul"},
                     new AudiModel(){Model = "quattro", Årgang = new DateTime(2017, 9, 15), MotorStørrelse = 3.0, Farve= "sort"},
-                    new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, Farve = "Rød"}
+                    new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, Farve = "rød"}
                 };
                 var Farve = liste.Where(x => x.Farve.Contains("sort")).ToList();
                 Console.WriteLine(liste.ToList());
