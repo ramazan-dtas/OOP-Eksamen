@@ -36,11 +36,12 @@ namespace Projekt_OOP
                     new AudiModel(){Model = "quattro", Årgang = new DateTime(2017, 9, 15), MotorStørrelse = 3.0, farve = diffcolor[0].ToString()/*Farve= "sort"*/},
                     new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, farve = diffcolor[3].ToString()/*Farve = "rød"*/}
                 };
-                var Farve = liste.Where(x => x.farve.Contains("sort")).ToList();
-                
+                var listAfBiler = liste.Where(x => x.farve.Contains("sort")).ToList();
+                if(listAfBiler.Count() == 0)
+                {
+                    throw new Exception("Listen er Tom!");
+                }
                 Console.WriteLine(liste.ToList());
-
-                
             }
             
             catch (Exception e)

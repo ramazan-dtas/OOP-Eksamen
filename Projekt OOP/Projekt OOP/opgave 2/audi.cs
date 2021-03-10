@@ -7,28 +7,28 @@ namespace Projekt_OOP.opgave_2
 {//Child klasse
     class audi : Bil
     {
-        private string diffPlade { get; set; }
-        private string nrPlade { get; set; }
-        private string tekst { get; set; }
-        private DateTime registreretDato { get; set; }
+        private string DiffPlade { get; set; }
+        private string NrPlade { get; set; }
+        private string Tekst { get; set; }
+        private DateTime RegistreretDato { get; set; }
 
-        public audi(string NrPlade, DateTime RegistreretDato, string DiffPlade) : base(NrPlade, RegistreretDato) 
+        public audi(string nrPlade, DateTime registreretDato, string diffPlade) : base(nrPlade, registreretDato) 
         {
-            diffPlade = DiffPlade;
-            nrPlade = NrPlade;
-            registreretDato = RegistreretDato;
+            DiffPlade = diffPlade;
+            NrPlade = nrPlade;
+            RegistreretDato = registreretDato;
         }
 
         public override string ToString()
         {
-            return $"Dato for registreret nummer plade: {registreretDato.Date}" +
-                $"\nplade nummer: {nrPlade}\nhvilke slags: {diffPlade}";
+            return $"Dato for registreret nummer plade: {RegistreretDato.Date}" +
+                $"\nplade nummer: {NrPlade}\nhvilke slags: {DiffPlade}";
         }
 
-        public string ToStringTekst(string Tekst)
+        public string ToStringTekst(string tekst)
         {
-            tekst = Tekst;
-            return tekst;
+            Tekst = tekst;
+            return Tekst;
         }
     }
 }
