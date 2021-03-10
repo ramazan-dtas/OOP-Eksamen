@@ -9,12 +9,14 @@ namespace Projekt_OOP.opgave_1
     {
         private string Mærke { get; set; }
         public int? Alder { get; set; }
+        public override DateTime SynDato { get; set; }
 
-        public Bil(string mærke, DateTime Årstal) : base(mærke, Årstal)
+        public Bil(string mærke, DateTime Årstal) : base(mærke)
         {
             Mærke = mærke;
             var alder = new Alder(Årstal);
-            Alder = alder.værdi;            
+            Alder = alder.værdi;
+            SynDato = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
         }
         
         public string GetMærke()

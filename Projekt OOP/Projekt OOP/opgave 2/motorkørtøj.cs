@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Projekt_OOP.opgave_2
-{//base class
-    abstract class motorkørtøj 
+{
+    abstract class motorkørtøj
     {
         public string model { get; set; }
+        public abstract DateTime SynDato { get; set; }
 
-        public motorkørtøj(string Model, DateTime SynDato)
+        public motorkørtøj(string Model)
         {
             model = Model;
+            
         }
     }
 }

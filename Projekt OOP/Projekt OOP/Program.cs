@@ -37,7 +37,10 @@ namespace Projekt_OOP
                     new AudiModel(){Model = "rs7", Årgang = new DateTime(2021, 2, 12), MotorStørrelse = 3.0, farve = diffcolor[3].ToString()/*Farve = "rød"*/}
                 };
                 var Farve = liste.Where(x => x.farve.Contains("sort")).ToList();
+                
                 Console.WriteLine(liste.ToList());
+
+                
             }
             
             catch (Exception e)
