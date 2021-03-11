@@ -5,15 +5,14 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_2
 {
-    abstract class motorkørtøj
+    abstract class motorkørtøj//Det her er min abstract class
     {
-        public string Model { get; set; }
-        public abstract DateTime SynDato { get; set; }
+        public string Model { get; set; }//normal properti
+        public abstract DateTime SynDato { get; set; }//abstract properti
 
-        public motorkørtøj(string model)
+        public motorkørtøj(string model)//constructor
         {
             Model = model;
-            
         }
     }
 }

@@ -13,14 +13,14 @@ namespace Projekt_OOP.opgave_2
         private DateTime RegistreretDato { get; set; }
 
         public audi(string nrPlade, DateTime registreretDato, string diffPlade) : base(nrPlade, registreretDato) 
-        {
+        {//værdierne oppe ved constructoren bliver sat videre properties
             DiffPlade = diffPlade;
             NrPlade = nrPlade;
             RegistreretDato = registreretDato;
         }
 
         public override string ToString()
-        {
+        {//Det her er outputtet når du kalder denne class
             return $"Dato for registreret nummer plade: {RegistreretDato.Date}" +
                 $"\nplade nummer: {NrPlade}\nhvilke slags: {DiffPlade}";
         }
