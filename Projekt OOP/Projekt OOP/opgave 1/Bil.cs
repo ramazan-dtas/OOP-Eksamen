@@ -11,10 +11,10 @@ namespace Projekt_OOP.opgave_1
         public int? Alder { get; set; }
         public override DateTime SynDato { get; set; }
 
-        public Bil(string mærke, DateTime Årstal) : base(mærke)
+        public Bil(string mærke, DateTime årstal) : base(mærke)
         {
             Mærke = mærke;
-            var alder = new Alder(Årstal);
+            var alder = new Alder(årstal);
             Alder = alder.værdi;
             SynDato = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
         }
