@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Projekt_OOP.opgave_1
 {
-    class Bil: motorkørtøj
+    class Bil : motorkørtøj
     {
         private string Mærke { get; set; }
         public int? Alder { get; set; }

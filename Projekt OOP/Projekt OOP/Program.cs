@@ -20,6 +20,7 @@ namespace Projekt_OOP
             var Nybil = p1;
             Nybil.Alder = 30;
             Console.WriteLine(Nybil.Alder);
+            Console.WriteLine(p1.Alder);
 
             Console.WriteLine("-------------------------OPGAVE 2-------------------------");
             audi a1 = new audi("DF 10 254", new DateTime(2012, 3, 10), "Personbil");
